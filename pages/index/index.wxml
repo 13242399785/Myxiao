@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- header -->
+  <view class="header-wapper" style="background-image: url('{{headerImg}}')">
+    <view class="hot-moke"></view>
+    <view class="header-top">
+      <view class="iconfont icon-caidan"></view>
+      <view class="iconfont icon-xingtaiduICON_sousuo---copy"></view>
+    </view>
+    <view class="header-title">
+      <image src="{{userInfos.imgUrl}}"></image>
+      <text class="header-title-text" space="nbsp">  {{userInfos.name}}</text>
+    </view>
+  </view>
+  <!-- 打卡邀请 -->
+  <view class="link-wapper">
+    <view class="clockin">
+      <text class="iconfont icon-daqia" > </text>
+      <text space="nbsp"> 打卡</text>
+    </view>
+    <view class="clockin invite">
+      <text class="iconfont icon-yaoqing"> </text>
+      <text space="nbsp"> 邀请</text>
+    </view>
+  </view>
+  <!-- 轮播 -->
+  <view class="swiper-wapper">
+    <swiper indicator-dots='true' class="swiper1" indicator-color="rgba(255, 255, 255, .3)" indicator-active-color='rgba(255, 255, 255, 0.9)'>
+      <block wx:for="{{backgroundList}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item" style="background-image: url('{{item.img}}')">
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 2 -->
+    <view class="hot-wapper">
+      <text class="hottoke">热议话题</text>
+      <swiper indicator-dots='true' class="swiper1" indicator-color="rgba(255, 255, 255, .3)" indicator-active-color='rgba(255, 255, 255, 0.9)'>
+        <block wx:for="{{backgroundList1}}" wx:key="*this"> 
+          <swiper-item>
+            <view class="hot-moke"></view>
+            <view class="barrage">
+              <text class="iconfont icon-danmu"></text>
+              <text space="nbsp"> 弹幕</text>
+            </view>
+            <view class="hot-title">{{item.title}}</view>
+            <view class="swiper-item" style="background-image: url('{{item.img}}')">
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>  
+  </view>
+  <!-- 导航 -->
+  <view class="top_nav">
+    <view class="nav-name {{item.typeId == currentId ? 'navActive':''}}" wx:for='{{navList}}' wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+      <text class="boder-btitle">{{item.name}}</text>
+    </view>
+  </view>
+  <!-- left -->
+  <view hidden="{{currentId!=1}}">全部页面</view>
+  <!-- right -->
+  <view hidden="{{currentId!=2}}">活跃页面</view>
+</view>
+<!--tab -->
+<view class="tab-bar">
+  <view class="tab-bar-border"></view>
+  <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab" mode="cover">
+    <view class="iconfont  {{item.iconClass}} {{activea}}"></view>
+    <view class="userAvatar-wapper" wx:if='{{index==2}}'><open-data class='userAvatar' type="userAvatarUrl"></open-data></view>
+    <view style="color: {{selected === index ? selectedColor : color}}">{{item.text}}</view>
+  </view>
+</view>

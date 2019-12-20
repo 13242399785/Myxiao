@@ -1,0 +1,153 @@
+/**app.wxss**/
+.container {
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box; */
+  margin: 0;padding: 0;
+} 
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1566330 */
+  src: url('http://at.alicdn.com/t/font_1566330_89ibkfehbj6.eot');
+  src: url('http://at.alicdn.com/t/font_1566330_89ibkfehbj6.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_1566330_89ibkfehbj6.woff2') format('woff2'),
+  url('http://at.alicdn.com/t/font_1566330_89ibkfehbj6.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_1566330_89ibkfehbj6.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_1566330_89ibkfehbj6.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family: 'iconfont' !important;
+  font-style: normal;
+  font-size:62rpx;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon13:before {
+  content: "\e65f";
+}
+
+.icon-shoukuan:before {
+  content: "\e65b";
+}
+
+.icon-jifenshangcheng:before {
+  content: "\e60c";
+}
+
+.icon-danmu:before {
+  content: "\e678";
+}
+
+.icon-biaoqing:before {
+  content: "\e630";
+}
+
+.icon-shequhuodong:before {
+  content: "\e725";
+}
+
+.icon-xiaoxi:before {
+  content: "\e622";
+}
+
+.icon-lianjie:before {
+  content: "\e67a";
+}
+
+.icon-yuyin:before {
+  content: "\e632";
+}
+
+.icon-youhuiquan:before {
+  content: "\e668";
+}
+
+.icon-danmu1:before {
+  content: "\e603";
+}
+
+.icon-pinglun:before {
+  content: "\e7c3";
+}
+
+.icon-yaoqing:before {
+  content: "\e73f";
+}
+
+.icon-caiquan:before {
+  content: "\e604";
+}
+
+.icon-yinle:before {
+  content: "\e62d";
+}
+
+.icon-zhuye:before {
+  content: "\e600";
+}
+
+.icon-tianjia:before {
+  content: "\e601";
+}
+
+.icon-xingtaiduICON_sousuo---copy:before {
+  content: "\e602";
+}
+
+.icon-icon--fanhui:before {
+  content: "\e61f";
+}
+
+.icon-tupian:before {
+  content: "\e60d";
+}
+
+.icon-caidan:before {
+  content: "\e6b7";
+}
+
+.icon-shoucang:before {
+  content: "\e652";
+}
+
+.icon-daqia:before {
+  content: "\ebd1";
+}
+
+.icon-shipin:before {
+  content: "\e625";
+}
+
+.icon-comiisquanzi:before {
+  content: "\e605";
+}
+
+.icon-icon-test:before {
+  content: "\e606";
+}
+
+.icon-shezhi:before {
+  content: "\e611";
+}
+
+.icon-tousu:before {
+  content: "\e607";
+}
+
+.icon-guanzhu:before {
+  content: "\e644";
+}
+
+.icon-add-fill:before {
+  content: "\e608";
+}
+
+.icon-dianzan:before {
+  content: "\e609";
+}

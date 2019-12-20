@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tab-bar/tab-bar",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffd600",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle": "white" 
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

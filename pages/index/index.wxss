@@ -1,0 +1,158 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 96rpx;
+  background: white;
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.tab-bar-border {
+  background-color: rgba(0, 0, 0, 0.33);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleY(0.5);
+}
+
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tab-bar-item cover-image {
+  width: 27px;
+  height: 27px;
+}
+.tab-bar-item{
+  font-size: 24rpx;
+}
+.tab-bar-item .iconfont{
+  color: rgb(255, 214, 0);
+  font-size: 32rpx;
+}
+.tab-bar-item .boxShow{
+  border-radius: 100%;
+  box-shadow: rgb(255, 214, 0) 0px 0px 0px 1px;
+}
+.userAvatar-wapper{
+  border: 1px solid #ccc;
+  margin: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40rpx;
+  height: 40rpx;
+}
+.userAvatar{  
+  display: block;
+}
+/* header */
+.header-wapper{
+  position: relative;
+  /* height: 240rpx; */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  
+}
+.header-top{
+  padding: 0 0.85714rem;
+  padding-top: 0.85714rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content:space-between;
+  color: #fff;
+}
+.header-top .iconfont{z-index: 99;font-size: 44rpx;color: #fff;}
+.header-title{height: 4rem;line-height: 4rem;padding: 0.71429rem 0.85714rem;display: flex;display: -webkit-flex;color: #fff;z-index: 99;}
+.header-title image{height: 100%;width: 4rem;z-index: 99;border: 4rpx solid #fff;border-radius: 8rpx;}
+.header-title-text{z-index: 99;font-weight: bold;font-size:36rpx;}
+/* 打卡邀请 */
+.link-wapper{
+  height: 88rpx;
+  line-height:  88rpx;
+  display: flex;
+  display: -webkit-box;
+  align-items: center;
+  font-size: 28rpx;
+}
+.clockin{
+  -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    text-align: center;
+}
+.link-wapper .iconfont{
+  font-size: 38rpx;
+  color: #717171;
+  vertical-align: middle;
+}
+.invite{border-left: 1px solid #f0f0f0;}
+/* nav */
+.top_nav{
+  background: #fff;
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  font-size: 32rpx;
+  line-height: 88rpx;
+}
+.nav-name{width: 50%;display: inline-block;text-align: center;}
+.navActive .boder-btitle{color:rgb(255, 214, 0);border-bottom: 6rpx solid rgb(255, 214, 0);display: inline-block;}
+
+/* swiper */
+.swiper-wapper{padding: .42857rem;background: #f7f7f7;}
+.swiper1{height: 244rpx;}
+.swiper1:first-child{margin-bottom: 0.42857rem;}
+.swiper-item{height: 244rpx;width: 100%;background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+}
+.hot-wapper{position:relative;}
+.hottoke{position: absolute;top: -0.14286rem;padding: 0 12rpx;
+    left: 1.07143rem;z-index: 999;background: #f04042;font-size: 0.85714rem;color: #fff;
+}
+.barrage{position: absolute;top: 0.5rem;right: 1.42857rem;width:116rpx;height:52rpx;border: 1px solid #fff;border-radius: 30rpx;color: #fff;font-size: 22rpx;text-align: center;line-height:52rpx; }
+.barrage .iconfont{font-size: 24rpx;color: #f7f7f7;padding-right: 4rpx;}
+.hot-title{position: absolute;left:50%;top:50%;color: #fff;transform: translate(-50%,-50%)}
+.hot-moke{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
